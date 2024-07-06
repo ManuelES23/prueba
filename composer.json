@@ -1,0 +1,20 @@
+{
+  "name": "manuel/prueba",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "Manuel\\Prueba\\": "src/",
+      "MVC\\": "./",
+      "Controllers\\": "./controllers",
+      "Model\\": "./models",
+      "Classes\\": "./classes"
+    }
+  },
+  "authors": [
+    {
+      "name": "ManuelES23",
+      "email": "j.mansolesc.223@gmail.com"
+    }
+  ],
+  "require": {}
+}
