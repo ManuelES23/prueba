@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 .boton {
-    @include m.boton(v.$azul, v.$blanco);
+    @include m.boton(green, v.$blanco);
     display: block;
     margin: 0 auto;
     margin-top: 6rem;
@@ -10,4 +10,13 @@
 
 .boton-eliminar {
     @include m.boton(v.$rojo, v.$blanco);
+}
+
+.btn-agregar {
+    width: 100%;
+
+   @include m.tablet {
+        width: 50%;
+    }
+
 }

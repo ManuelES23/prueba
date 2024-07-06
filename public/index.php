@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/../includes/app.php';
 
+use Controllers\CosechasController;
 use MVC\Router;
 use Controllers\LoginController;
 
@@ -25,6 +26,10 @@ $router->post('/crear-cuenta', [LoginController::class, 'crear']);
 //* Confirma tu cuenta
 $router->get('/confirmar-cuenta', [LoginController::class, 'confirmar']);
 $router->get('/mensaje', [LoginController::class, 'mensaje']);
+
+//! Vistas proyecto
+$router->get('/cosechas', [CosechasController::class, 'index']);
+$router->get('/agregar-cosecha', [CosechasController::class, 'agregar']);
 
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
