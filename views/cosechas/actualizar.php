@@ -2,7 +2,6 @@
 <p class="descripcion-pagina">Modifica los valores del formulario</p>
 
 <?php
-include __DIR__ . '/../templates/barra.php';
 include __DIR__ . '/../templates/alertas.php';
 ?>
 
