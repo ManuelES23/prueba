@@ -27,9 +27,14 @@ $router->post('/crear-cuenta', [LoginController::class, 'crear']);
 $router->get('/confirmar-cuenta', [LoginController::class, 'confirmar']);
 $router->get('/mensaje', [LoginController::class, 'mensaje']);
 
-//! Vistas proyecto
+//! Crud de la aplicación con consultar las registros con api
 $router->get('/cosechas', [CosechasController::class, 'index']);
-$router->get('/agregar-cosecha', [CosechasController::class, 'agregar']);
+$router->get('/cosechas/agregar', [CosechasController::class, 'agregar']);
+$router->post('/cosechas/agregar', [CosechasController::class, 'agregar']);
+$router->get('/cosechas/consultar', [CosechasController::class, 'consultar']);
+$router->get('/cosechas/actualizar', [CosechasController::class, 'actualizar']);
+$router->post('/cosechas/actualizar', [CosechasController::class, 'actualizar']);
+$router->post('/cosechas/eliminar', [CosechasController::class, 'eliminar']);
 
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador

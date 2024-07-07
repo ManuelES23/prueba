@@ -20,3 +20,15 @@
     }
 
 }
+.boton-salir {
+    width: 100%;
+    @include m.boton(red, v.$blanco);
+     display: block;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
